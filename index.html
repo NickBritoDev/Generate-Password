@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./images/gerador.png" type="image/x-icon">
+    <!--css-->
+    <link rel="stylesheet" href="style.css">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200;400;600;800&family=Roboto:ital,wght@0,500;1,300;1,700&display=swap" rel="stylesheet">
+    <title>Gerador de Senha</title>
+</head>
+<body>
+    <h1 class="logo">Gerador de Senha</h1>
+
+    <main class="container-input">
+        <span>Tamanho <span id="valor"></span> caracteres </span>
+        <input id="slider" class="slider" type="range" min="5" max="25" value="8"/>
+        <button id="button" class="button-cta" onclick="generatePass()">Gerar Senha</button>
+    </main>
+
+    <div onclick="copyPass()" class="container-pass hide"id="container-pass">
+        <span class="title">Sua Senha Gerada Foi:</span>
+        <span class="pass" id="pass"></span>
+        <span class="ctrl" >Clique na senha para copiar. 🤟🏽</span>
+    </div>
+
+    <!--javascript-->
+    <script src="javascript.js"></script>
+</body>
+</html>
